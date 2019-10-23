@@ -2,7 +2,8 @@
 
 Swagger is in api-server folder, but was not generating.
 
-Heroku:
-Travis:
+Heroku: https://sarahduv-401-lab-07.herokuapp.com/
 
-![uml]()
+Travis: https://www.travis-ci.com/sarahduv/401-lab-07
+
+![uml](https://raw.githubusercontent.com/sarahduv/401-lab-07/master/assets/uml.jpg)
