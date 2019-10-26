@@ -32,14 +32,18 @@ describe('web server', () => {
 
     return mockRequest
       .post('/badroute')
+      .then( results => {
         expect(results.status).toBe(404);
+      });
   });
 
   it('tests for the data model', () => {
 
     return mockRequest
-      .post('/error')
+      .get('/error')
+      .then( results => {
         expect(results.status).toBe(500);
+      });        
   });
 
   it('this should post the object', () => {
