@@ -10,14 +10,15 @@ let db = [];
 function registerRoutes(app) {
 
   // Route to Get All Categories
+  // eslint-disable-next-line no-unused-vars
   app.get('/categories', (request, response, next) => {
-    console.log('i am hereeeeeeee2222222222');
     let count = db.length;
     let results = db;
     response.json({ count, results });
   });
 
   // Route to Create a Category
+  // eslint-disable-next-line no-unused-vars
   app.post('/categories', (request, response, next) => {
     if(!request.valid){
       // we want our test to pass
@@ -31,5 +32,5 @@ function registerRoutes(app) {
 }
 
 module.exports = {
-  registerRoutes
-}
+  registerRoutes,
+};
